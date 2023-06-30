@@ -1,0 +1,56 @@
+$primary-yellow: #ffd54f;
+footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .business-card {
+    box-shadow: 0 17px 36px rgba(0, 0, 0, 0.1)  ; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    border-bottom: 10px solid $primary-yellow;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    .card-img {
+      border-bottom-right-radius: 50%;
+      overflow: hidden;
+      max-width: 40%;
+      height: 100%;
+      img {
+        object-fit: fill;
+        width: 100%;
+      }
+    }
+    .card-info {
+      box-sizing: border-box;
+      padding: 20px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      .contacts-bar {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-weight: light;
+        span {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    p {
+      text-align: center;
+      max-width: 60vw;
+    }
+  }
+}
