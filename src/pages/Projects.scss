@@ -1,0 +1,70 @@
+$primary-bg: #faf4ee;
+$primary-text-color: #281952;
+$primary-yellow: #ffd54f;
+$primary-blue: #4f46e5;
+$soft-text-color: #74678b;
+$secondary-font: "Noto Serif", serif;
+
+
+.projects{
+    padding: 1rem;
+    display: flex;
+    
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectCard{
+    max-width:300px;
+    overflow: hidden;
+   
+    max-height: 350px;
+    
+    position: relative;
+   
+    img{
+      
+       
+        width: 100%;
+        height: 100%;
+        
+        object-fit:fill;
+    }
+    .project-info{
+        box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        bottom: 0;
+        height: 100%;
+        transform: translateY(100%);
+        background-color: rgba(0, 0, 0, 0.574);
+        transition: all 0.3s ease;
+        color: white;
+        a{
+
+            box-sizing: border-box;
+            background-color: $primary-yellow;
+            
+            padding: 15px 20px;
+            border-radius: 2px;
+            text-decoration: none;
+            color: $primary-text-color;
+        }
+    }
+  
+}
+
+.projectCard:hover{
+     .project-info{
+        transform: translateY(0);
+    }
+}
+
