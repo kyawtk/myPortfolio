@@ -2,6 +2,9 @@ import React from "react";
 import { BsTelephone, BsMailbox } from "react-icons/bs";
 import { FaLanguage, FaReact } from "react-icons/fa";
 import { motion, scroll } from "framer-motion";
+import Tilt from 'react-parallax-tilt'
+import { Parallax } from 'react-scroll-parallax';
+
 import Accordion from "../components/Accordion";
 const Home = () => {
   return (
@@ -10,6 +13,7 @@ const Home = () => {
       <HeroSection></HeroSection>
       <AboutWork></AboutWork>
       <CV></CV>
+      
       <Education></Education>
       <FAQ></FAQ>
     </div>
@@ -79,6 +83,7 @@ function HeroSection() {
 
 function AboutWork() {
   return (
+    
     <motion.div
       initiasl={{
         opacity: 0,
@@ -168,6 +173,7 @@ function CV() {
 
 function Education() {
   return (
+    
     <motion.div
       className="education"
       initial={{
@@ -225,6 +231,7 @@ function FAQ() {
 
 function TopImage() {
   return (
+    
     <motion.div
       animate={{
         opacity: 1,

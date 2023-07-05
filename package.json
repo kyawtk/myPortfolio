@@ -14,7 +14,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
+    "react-parallax-tilt": "^1.7.151",
     "react-router-dom": "^6.14.0",
+    "react-scroll-parallax": "^3.4.2",
     "sass": "^1.63.6"
   },
   "devDependencies": {
