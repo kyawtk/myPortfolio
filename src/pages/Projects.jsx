@@ -43,6 +43,7 @@ function ProjectCard({color,title,href,imgSrc}) {
 
 
 const projectData = [
+  {title: 'Entertainment Spree', href: 'https://entertainment-spree.netlify.app', imgSrc:'./images/movie.jpg'}
   { title:'Magic The Gathering', href: 'https://mtgmemory.netlify.app/',imgSrc:'/images/mtg.jpg'},
   { title:'Lovely Notes', href: 'https://lovely-notes.netlify.app/',imgSrc:'/images/notes.png'},
   { title:'Color Generator', href: 'https://lovely-color-generator.netlify.app/',imgSrc:'/images/colors.jpg'},
