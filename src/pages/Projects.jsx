@@ -43,9 +43,12 @@ function ProjectCard({color,title,href,imgSrc}) {
 
 
 const projectData = [
+{title: 'Busy Kitchen', href:'https://busy-kitchen.netlify.app/', imgSrc:'./images/kitchen.jpg'},
   {title: 'Entertainment Spree', href: 'https://entertainment-spree.netlify.app', imgSrc:'./images/movie.jpg'},
   { title:'Magic The Gathering', href: 'https://mtgmemory.netlify.app/',imgSrc:'/images/mtg.jpg'},
   { title:'Lovely Notes', href: 'https://lovely-notes.netlify.app/',imgSrc:'/images/notes.png'},
+  {title: 'Shoppy', href:'https://shopfront.netlify.app',imgsrc:''},
+
   { title:'Color Generator', href: 'https://lovely-color-generator.netlify.app/',imgSrc:'/images/colors.jpg'},
   { title:'Travel Agency', href: 'https://myanmaradventureskyawtk.netlify.app/',imgSrc:'/images/travelAgency.jpg'},
   { title:'Project Planner', href: 'https://projectplanerkyawtk.netlify.app/',imgSrc:'/images/projectPlanner.jpg'},
