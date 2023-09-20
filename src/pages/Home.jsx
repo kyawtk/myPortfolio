@@ -64,7 +64,7 @@ function HeroSection() {
           👋 Hi, I am <span> Kyaw Thant Khine,</span>{" "}
         </h2>
         <h1 className="headding">
-          <span className="bold">Freelance front-end developer</span> with a
+          <span className="bold">A front-end developer</span> with a
           passion for design &{" "}
           <span className="underline big-underline">React</span>.
         </h1>
@@ -99,7 +99,7 @@ function AboutWork() {
       <div className="about">
         <h1 className="headding">
           <span className="bold">3+ Years online experience </span>as a
-          developer & student
+          student
         </h1>
         <p>
           I am a front-end developer with a strong foundation in Html,Css and
