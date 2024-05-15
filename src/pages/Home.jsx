@@ -2,8 +2,8 @@ import React from "react";
 import { BsTelephone, BsMailbox } from "react-icons/bs";
 import { FaLanguage, FaReact } from "react-icons/fa";
 import { motion, scroll } from "framer-motion";
-import Tilt from 'react-parallax-tilt'
-import { Parallax } from 'react-scroll-parallax';
+import Tilt from "react-parallax-tilt";
+import { Parallax } from "react-scroll-parallax";
 
 import Accordion from "../components/Accordion";
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
       <HeroSection></HeroSection>
       <AboutWork></AboutWork>
       <CV></CV>
-      
+
       <Education></Education>
       <FAQ></FAQ>
     </div>
@@ -64,17 +64,18 @@ function HeroSection() {
           👋 Hi, I am <span> Kyaw Thant Khine,</span>{" "}
         </h2>
         <h1 className="headding">
-          <span className="bold">A front-end developer</span> with a
-          passion for design &{" "}
+          <span className="bold">A front-end developer</span> with a passion for
+          Design, Business &{" "}
           <span className="underline big-underline">React</span>.
         </h1>
         <p>
-          I enjoy building solid and user-friendly web applications using my
-          experience in interface design, Javascript and{" "}
+          I build solid and user-friendly web applications for businesses using
+          my experience in interface design, Javascript and{" "}
           <FaReact className="react-icon" />
-          React. Additionally, I am a highly adaptive and motivated fast
-          learner. If you need a communicative front-end developer who enjoys
-          working as part of a team, I’d love to hear from you!
+          React.
+          <br /> Additionally, I am a highly adaptive and business oriented. If
+          you need a communicative front-end developer who enjoys working as
+          part of a team, I’d love to hear from you!
         </p>
       </motion.div>
     </section>
@@ -83,7 +84,6 @@ function HeroSection() {
 
 function AboutWork() {
   return (
-    
     <motion.div
       initiasl={{
         opacity: 0,
@@ -98,8 +98,8 @@ function AboutWork() {
       <small>About my Work</small>
       <div className="about">
         <h1 className="headding">
-          <span className="bold">3+ Years online experience </span>as a
-          student
+          <span className="bold">3+ Years experience </span>as a Professional
+          Frontend Developer
         </h1>
         <p>
           I am a front-end developer with a strong foundation in Html,Css and
@@ -163,9 +163,10 @@ function CV() {
       <p>
         From rocking the salesperson role to running my own brick-and-mortar
         store, and now diving into the captivating world of web development,
-        it's been a journey filled with joy and cherished moments. Life has been
-        a rollercoaster, and I've been lucky enough to enjoy the ride with a
-        light-hearted spirit.
+        it's been a journey filled with joy and cherished moments. <br /> I am
+        currently working as a fontend devloper creating highly interactive web
+        apps, and entriprise solutions at{" "}
+        <a href="https://www.shopdoora.com">Shopdoora</a>.
       </p>
     </motion.div>
   );
@@ -173,7 +174,6 @@ function CV() {
 
 function Education() {
   return (
-    
     <motion.div
       className="education"
       initial={{
@@ -192,11 +192,12 @@ function Education() {
           to varified certificates.
         </h1>
         <p>
-          I believe that Web Development is all about continuous learning, and
-          I'm constantly exploring various avenues to expand my knowledge.
-          Whether it's diving into online resources, devouring books on a wide
-          range of subjects, or taking courses to enhance my skills, I embrace
-          every opportunity to feed my curious mind.
+          I studied computer science at{" "}
+          <b>University of Computer Studies, Yangon</b> and I continued learning
+          on online platforms, teaching myself web development.{" "}
+          <b>Google's Professional UX design course</b> taught me how to create
+          user friendly apps and sites that are functional and accomplish the{" "}
+          <b>business goals</b>.
         </p>
       </div>
       <div className="certificates"></div>
@@ -231,7 +232,6 @@ function FAQ() {
 
 function TopImage() {
   return (
-    
     <motion.div
       animate={{
         opacity: 1,

@@ -5,10 +5,9 @@ import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
 import "./Footer.scss";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+
 const Footer = (props) => {
-  const location = useLocation();
+
 
   return (
     <footer>
@@ -19,7 +18,7 @@ const Footer = (props) => {
           experiences or just want to have a chat.
         </p>
 
-        {location.pathname != "/" ? (
+        {/* {location.pathname != "/" ? (
           <Link to="/">
             {" "}
             <h2>Home Page</h2>{" "}
@@ -29,7 +28,7 @@ const Footer = (props) => {
             {" "}
             <h2>See my hobby Projects</h2>
           </Link>
-        )}
+        )} */}
       </Parallax>
       <Tilt glareEnable={true} gyroscope={true}>
         <motion.div className="business-card">

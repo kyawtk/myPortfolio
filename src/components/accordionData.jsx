@@ -17,7 +17,7 @@ const accordionData = [
   {
     title: "Ok enough about work. What do you do in spare time",
     id: 123456,
-    info: "The quick brown fox jumps over the lazy dog.",
+    info: "I learn business because that's what matters essentially. ",
   },
   
 ];
