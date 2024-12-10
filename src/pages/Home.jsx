@@ -64,8 +64,8 @@ function HeroSection() {
           👋 Hi, I am <span> Kyaw Thant Khine,</span>{" "}
         </h2>
         <h1 className="headding">
-          <span className="bold">A front-end developer</span> with a passion for
-          Design, Business &{" "}
+          <span className="bold">A front-end developer</span> with proven experience in
+          frontend development &{" "}
           <span className="underline big-underline">React</span>.
         </h1>
         <p>
