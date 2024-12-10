@@ -12,7 +12,7 @@ const accordionData = [
   {
     title: "What was this site built with?",
     id: 987654,
-    info: `Javascript framework React.js. Made lively with Framer Motion Animations and vanilla CSS.`,
+    info: `Javascript framework React.js. Made lively with Framer Motion Animations and vanilla CSS. Set up github actions to automatically deploy on aws lightsail vps`,
   },
   {
     title: "Ok enough about work. What do you do in spare time",
