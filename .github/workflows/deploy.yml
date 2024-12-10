@@ -39,20 +39,15 @@ jobs:
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
        # SSH into the server and start the Vite app
-      - name: Start Vite App on Server
+      - name: Setup SSH Key
         run: |
-          ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
-            # Navigate to the Vite app directory
-            cd /home/ubuntu/old-portfolio
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > /tmp/private_key.pem
+          chmod 600 /tmp/private_key.pem
 
-            # Install dependencies (if not already installed)
-            npm install
-
-            # Start the Vite app using PM2
-            pm2 start npm --name "old-portfolio" -- run start -- --port 5173
-
-            # You can also set up a system service if you'd prefer it to run persistently
-            # sudo systemctl start vite-app.service
+      - name: SSH into the server
+        run: |
+          ssh -o StrictHostKeyChecking=no -i /tmp/private_key.pem ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
+            # Your SSH commands here
           EOF
         env:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
