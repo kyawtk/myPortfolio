@@ -1,0 +1,38 @@
+name: Build and Deploy Vite App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout Code
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Step 3: Install Dependencies and Build
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm run build
+
+      # Step 4: Deploy to Server
+      - name: Deploy Built Files
+        uses: burnett01/rsync-deployments@5.2
+        with:
+          switches: -avz --delete
+          path: ./dist/
+          remote_path: /home/ubuntu/vite-app
+          remote_host: 47.130.48.189
+          remote_user: ubuntu
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
