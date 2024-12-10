@@ -47,7 +47,13 @@ jobs:
       - name: SSH into the server
         run: |
           ssh -o StrictHostKeyChecking=no -i /tmp/private_key.pem ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
-            # Your SSH commands here
+            cd /home/ubuntu/old-portfolio
+              # Install dependencies if needed
+            npm install
+
+            # Start the Vite app using PM2
+            pm2 start npm --name "old-portfolio" -- run start -- --port 5173
+
           EOF
         env:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
