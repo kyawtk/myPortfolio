@@ -37,7 +37,7 @@ jobs:
           remote_user: ${{ secrets.REMOTE_USER }}
 
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
-
+          
        # SSH into the server and start the Vite app
       #- name: Setup SSH Key
       #  run: |
@@ -54,8 +54,7 @@ jobs:
             # Start the Vite app using PM2
          #   pm2 start npm --name "old-portfolio" -- run start -- --port 5173
 ##
-      #    EOF
-       # env:
-       #   REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        #  REMOTE_USER: ${{ secrets.REMOTE_USER }}
-         # SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        env:
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
