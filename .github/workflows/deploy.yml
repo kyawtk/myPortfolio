@@ -32,7 +32,7 @@ jobs:
         with:
           switches: -avz --delete
           path: ./dist/
-          remote_path: /home/ubuntu/vite-app
+          remote_path: /home/ubuntu/old-portfolio
           remote_host: 47.130.48.189
           remote_user: ubuntu
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
