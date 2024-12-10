@@ -35,4 +35,4 @@ jobs:
           remote_path: /home/ubuntu/vite-app
           remote_host: 47.130.48.189
           remote_user: ubuntu
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
